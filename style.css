@@ -1,0 +1,317 @@
+*{
+    padding:0px;
+    margin:0px;
+ font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    background: rgba(108, 106, 106, 0.368) !important;
+}
+.navbar{
+    padding:20px !important;
+}
+.navbar-brand{
+    width: 200px;
+    text-align: center;
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color:rgba(8, 8, 206, 0.689) !important;
+}
+.form-control{
+    padding:12px !important;
+    border-radius: 25px !important;
+}
+.form-control::placeholder{
+     padding-left: 30px;
+}
+.d-flex{
+    width: 40%;
+    position: relative;
+}
+.d-flex button{
+    border:none;
+    background: none;
+    position: absolute;
+    left: 0;
+    transform: translate(75%,40%);
+    font-size: 1.2rem;
+}
+nav ul li{
+   padding-left:30px;
+}
+
+/* car Rental */
+.rentalcar{
+    padding-top:100px;
+    color: white;
+}
+.rentalcar-left{
+    width: 100%;
+    height: 300px;
+    background-color: #5CAFFC;
+    padding: 20px;
+}
+.rentalcar-right{
+    width: 100%;
+    height: 300px;
+    background-color: #3563E9;
+    padding: 20px;
+}
+.rentalcar-left-img{
+    width: 100%;
+    text-align: end;
+
+}
+.rentalcar-left img{
+    width: 400px;
+}
+.rentalcar-right img{
+    width: 400px;
+}
+.rentalcar-right-box{
+    width: 60%;
+    height: 60%;
+}
+.rentalcar-left button{
+    border-radius: 15px;
+   color:white;
+    width: 40%;
+   padding:12px;
+   background-color: #3563E9;
+   border:none;
+   transition: all 0.3s;
+}
+.rentalcar-left button:hover{
+    background-color: #3562e9b1;
+}
+.rentalcar-right button{
+    color:white;
+    width: 40%;
+     border-radius: 15px;
+    padding:12px;
+    background-color:#5CAFFC;
+    border:none;
+}
+.rentalcar-right button:hover{
+    background-color:#0579e5;
+}
+/* PickUp */
+.Pickup{
+    padding-top:50px;
+}
+.Pickup-left{
+    width: 100%; 
+}
+.Pickup-left-body input{
+   padding:10px;
+}
+.Pickup-left-body select{
+    padding:15px;
+}
+.Pickup-right{
+    width: 100%;
+
+}
+.Pickup-right-start{
+    padding:15px;
+    width: 90%;
+    margin-right: auto;
+    background-color: white;
+ 
+}
+.Pickup-right-end{
+    padding:15px;
+    width: 90%;
+    margin-left: auto;
+    background-color: white;
+
+}
+.Pickup-left-head{
+    display: flex;
+    text-align: center;
+
+}
+.Pickup-left-body{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+@media  screen and (max-width:990px) {
+    .Pickup-right-start{
+        width: 100%;
+        margin-block: 20px;
+    }
+    .Pickup-right-end{
+        width: 100%;
+    }
+    .rentalcar-right-box{
+        width:100% !important;
+    }
+    .rentalcar-left-img{
+        position: relative;
+    }
+    .rentalcar-left-img img{
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 32px;
+    }
+    .PopularCar-list{
+        place-items: center;
+    }
+    .RecommantationCar .header{
+        padding-left: 50px !important;
+    }
+    .footer-left {
+        width: 100% !important;
+    }
+    .footer-footer {
+        display: block !important;
+      
+    }
+    .footer-privacy{
+        width: 100% !important;
+    }
+}
+.Pickup-Locations{
+    line-height: 2;
+    padding: 15px;
+    border-right:1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.Pickup-Date{
+    line-height: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-right:1px solid black;
+}
+.Pickup-Time{
+    line-height: 2;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+/* PopularCar */
+.PopularCar{
+    padding-block: 100px;
+}
+.PopularCar .header{
+    padding-left: 120px;
+    padding-block: 12px;
+}
+.PopularCar-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.PopularCar .container{
+    display: flex;
+    justify-content:space-between;
+}
+.PopularCar-box{
+    margin-block: 15px;
+    padding:15px;
+    width: 300px;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+}
+.PopularCar-box-head{
+    display: flex;
+    justify-content: space-between;
+}
+.PopularCar-box-details{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.PopularCar-box-details > div{
+    display: flex;
+   
+}
+.PopularCar-box-img{
+    margin-block: 30px;
+    width: 270px;
+    height: 100px;
+}
+.PopularCar-box-img img{
+    width: 100%;
+    height: 100%;
+}
+.PopularCar-box-details div > img{
+    width: 20px;
+    height: 20px;
+}
+.PopularCar-box-Rate{
+    display: flex;
+    justify-content: space-between;
+}
+.PopularCar-box-Rate button{
+    padding:12px;
+    background: #3563E9;
+    color:white;
+    border:none;
+    border-radius: 10px;
+}
+/* RecommantationCar */
+.RecommantationCar .header{
+    padding-left: 120px;
+    padding-block: 12px;
+}
+.RecommantationCar .container{
+    width: 100%;
+}
+.RecommantationCar .container .show-button{
+    margin-block: 18px;
+    width: 162px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    border:none;
+    background: #3563E9;
+    color:white;
+    border-radius: 5px;
+}
+/* footer */
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    padding:40px;
+    background-color: white;
+}
+.footer-left h2{
+    padding-block: 20px;
+        width: 200px;
+        text-align: center;
+        font-size: 1.8rem !important;
+        font-weight: 700 !important;
+        color:rgba(8, 8, 206, 0.689) !important;
+}
+.footer-left{
+    width: 300px;
+    line-height: 2;
+}
+.footer-left p{
+    color:rgba(0, 0, 0, 0.509);
+}
+.footer ul {
+    padding-left: 0px !important;
+}
+.footer ul li{
+    color:rgba(0, 0, 0, 0.509);
+    list-style: none;
+    line-height: 3;
+}
+.footer-footer{
+    color:black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-privacy{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
